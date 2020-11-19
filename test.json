@@ -1,0 +1,189 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "copyOnSelect": false,
+    "copyFormatting": false,
+    "profiles": {
+        "defaults": {
+            "fontSize": 9,
+            "backgroundImageStretchMode": "none",
+            "backgroundImageOpacity": 0.3,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.8,
+            "scrollbarState": "hidden"
+        },
+        "list": [
+            {
+                "name": "PowerShell",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "colorScheme": "MaterialOcean",
+                "icon": "C:\\Users\\alanv\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\img\\icon\\windows.png",
+                "backgroundImage": "C:\\Users\\alanv\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\img\\background\\windows.png",
+                "fontFace": "Cascadia Code PL",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                "name": "Ubuntu",
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "colorScheme": "Neutron",
+                "fontFace": "JetBrainsMono Nerd Font",
+                "icon": "C:\\Users\\alanv\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\img\\icon\\ubuntu.png",
+                "backgroundImage": "C:\\Users\\alanv\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\img\\background\\ubuntu.png",
+                "source": "Windows.Terminal.Wsl",
+                "hidden": false
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Símbolo del sistema",
+                "commandline": "cmd.exe",
+                "hidden": true
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "Galaxy",
+            "black": "#000000",
+            "red": "#f9555f",
+            "green": "#21b089",
+            "yellow": "#fef02a",
+            "blue": "#589df6",
+            "purple": "#944d95",
+            "cyan": "#1f9ee7",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#fa8c8f",
+            "brightGreen": "#35bb9a",
+            "brightYellow": "#ffff55",
+            "brightBlue": "#589df6",
+            "brightPurple": "#e75699",
+            "brightCyan": "#3979bc",
+            "brightWhite": "#ffffff",
+            "background": "#1d2837",
+            "foreground": "#ffffff"
+        },
+        {
+            "name": "Firewatch",
+            "black": "#585f6d",
+            "red": "#d95360",
+            "green": "#5ab977",
+            "yellow": "#dfb563",
+            "blue": "#4d89c4",
+            "purple": "#d55119",
+            "cyan": "#44a8b6",
+            "white": "#e6e5ff",
+            "brightBlack": "#585f6d",
+            "brightRed": "#d95360",
+            "brightGreen": "#5ab977",
+            "brightYellow": "#dfb563",
+            "brightBlue": "#4c89c5",
+            "brightPurple": "#d55119",
+            "brightCyan": "#44a8b6",
+            "brightWhite": "#e6e5ff",
+            "background": "#1e2027",
+            "foreground": "#9ba2b2"
+        },
+        {
+            "name": "MaterialOcean",
+            "black": "#546e7a",
+            "red": "#ff5370",
+            "green": "#28be48",
+            "yellow": "#ffcb6b",
+            "blue": "#1f4fb8",
+            "purple": "#c792ea",
+            "cyan": "#89ddff",
+            "white": "#ffffff",
+            "brightBlack": "#4493b8",
+            "brightRed": "#ff5370",
+            "brightGreen": "#c3e88d",
+            "brightYellow": "#ffcb6b",
+            "brightBlue": "#a1a0f0",
+            "brightPurple": "#c792ea",
+            "brightCyan": "#89ddff",
+            "brightWhite": "#ffffff",
+            "background": "#0f111a",
+            "foreground": "#6db8e4"
+        },
+        {
+            "name": "Neutron",
+            "black": "#23252b",
+            "red": "#e66646",
+            "green": "#76f0bd",
+            "yellow": "#deb566",
+            "blue": "#2f84ac",
+            "purple": "#a4799d",
+            "cyan": "#1C8BAE",
+            "white": "#9eb6c4",
+            "brightBlack": "#28adda",
+            "brightRed": "#b54036",
+            "brightGreen": "#5ab977",
+            "brightYellow": "#deb566",
+            "brightBlue": "#839fc4",
+            "brightPurple": "#a4799d",
+            "brightCyan": "#60c2e9",
+            "brightWhite": "#ebedf2",
+            "background": "#1c1e22",
+            "foreground": "#c6ceeb"
+        },
+        {
+            "name": "OneDark",
+            "black": "#1e2127",
+            "red": "#e06c75",
+            "green": "#98c379",
+            "yellow": "#d19a66",
+            "blue": "#61afef",
+            "purple": "#c678dd",
+            "cyan": "#56b6c2",
+            "white": "#abb2bf",
+            "brightBlack": "#5c6370",
+            "brightRed": "#e06c75",
+            "brightGreen": "#98c379",
+            "brightYellow": "#d19a66",
+            "brightBlue": "#61afef",
+            "brightPurple": "#c678dd",
+            "brightCyan": "#56b6c2",
+            "brightWhite": "#ffffff",
+            "background": "#1e2127",
+            "foreground": "#abb2bf"
+        }
+    ],
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "alwaysShowTabs": false,
+    "showTabsInTitlebar": false,
+    "tabWidthMode": "compact",
+    "showTerminalTitleInTitlebar": false,
+    "initialRows": 40,
+    "initialCols": 170,
+    "startOnUserLogin": true
+}

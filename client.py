@@ -1,29 +1,31 @@
-from server import HEADERSIZE
 import socket
+import pickle
+import json
+from os import getenv
 
+# HEADERSIZE, RECIVE SIZE OF BUFFER MSG
+# THE HEADER ARE THE FIRST ${HEADER} DIGITS OF THE MESSAGE
+# if header is 3, maximum size of the buffer can be 999
 HEADERSIZE = 9
 SERVER = "server"
-PORT = 9000
+PORT = int(getenv('PORT', '5089'))
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((SERVER, PORT))
 
 
-def send(msg: str) -> None:
-    message = msg.encode()
+def send(msg: object) -> None:
+    message = pickle.dumps(msg)
     msg_len = len(message)
     header = f"{msg_len:<{HEADERSIZE}}".encode()
     
-    # message = header + message
     client.send(header)
     client.send(message)
     
     print(client.recv(1024).decode())
 
-    # msg_length = len(message)
-    # send_length = str(msg_length).encode(FORMAT)
-    # send_length += b' ' * (HEADER - len(send_length))
-
 if __name__ == "__main__":
-    message = input("Enter your message: ")
+    with open('test.json') as f:
+        message = json.load(f)
+
     send(message)
