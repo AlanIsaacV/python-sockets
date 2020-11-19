@@ -3,15 +3,19 @@ version: "3.8"
 services:
   server:
     build:
-      context: .
+      context: ./server/
       dockerfile: server.dockerfile
     container_name: server
+    volumes:
+      - type: bind
+        source: ./server/
+        target: /src/
     expose:
       - 8000
       - 5089
   client:
     build:
-      context: .
+      context: ./client/
       dockerfile: client.dockerfile
     container_name: client
     depends_on:

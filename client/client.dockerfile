@@ -11,5 +11,6 @@ ENV PORT=5089
 
 WORKDIR /src
 COPY client.py .
+COPY test.json .
 
 CMD [ "python", "client.py" ]
