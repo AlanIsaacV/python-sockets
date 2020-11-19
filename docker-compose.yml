@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server.dockerfile
+    container_name: server
+    expose:
+      - 8000
+      - 5089
+  client:
+    build:
+      context: .
+      dockerfile: client.dockerfile
+    container_name: client
+    depends_on:
+      - server
