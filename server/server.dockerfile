@@ -14,4 +14,4 @@ COPY server.py .
 
 EXPOSE ${PORT}
 
-CMD [ "python", "server.py" ]
+CMD [ "python", "-u", "server.py" ]

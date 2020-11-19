@@ -13,4 +13,4 @@ WORKDIR /src
 COPY client.py .
 COPY test.json .
 
-CMD [ "python", "client.py" ]
+CMD [ "python", "-u", "client.py" ]
